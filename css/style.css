@@ -123,6 +123,13 @@ nav a:hover {
   position: relative;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .4);
+}
+
 .hero img {
   width: 100%;
   display: block;
@@ -136,10 +143,11 @@ nav a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: lightgoldenrodyellow;
+  color: white;
   font-size: clamp(0.3rem, 1rem + 3vw, 2.5rem);
   text-align: center;
   overflow-y: auto;
+  z-index: 1;
 }
 
 
